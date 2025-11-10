@@ -6,52 +6,89 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #0a0a0a;
-    color: #c5c5c5;
-    line-height: 1.7;
-    font-size: 16px;
+    background-color: #000;
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    max-width: 750px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 5rem 2.5rem;
 }
 
 section {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+}
+
+.img img {
+    max-width: 100%;
+    height: 128;
+    display: flex;
+    flex-direction:column;
+    margin: 3rem auto;
+    border-radius: 0.5rem;
+    opacity: 0.9;
+}
+
+.Foto-Casos img {
+    max-width: 95%;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem auto;
+    border-radius: 1.1rem;
+    opacity: 0.9;
+}
+
+.Foto-An img {
+     max-width: 95%;
+    height: 314px;
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem auto;
+    border-radius: 1.1rem;
+    opacity: 0.9;
 }
 
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #ffffff;
+    letter-spacing: 5px;
+    color: #fff;
 }
 
 h1 {
-    font-size: 2.8rem;
-    letter-spacing: 6px;
+    font-size: 3.2rem;
+    letter-spacing: 8px;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.8rem;
 }
 
 h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
 }
 
 p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    color: #c0c0c0;
 }
 
 strong {
@@ -61,77 +98,83 @@ strong {
 
 .site-header, .site-footer {
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 4rem 2.5rem;
 }
 
 .site-header {
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #111;
 }
 
 .site-header p {
-    font-size: 0.9rem;
-    color: #888;
-    letter-spacing: 2px;
+    font-size: 0.95rem;
+    color: #777;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 0;
 }
 
 .site-footer {
-    border-top: 1px solid #222;
-    padding: 2rem 1rem;
+    border-top: 1px solid #111;
+    padding: 3rem 2.5rem;
 }
 
 .site-footer p {
-    font-size: 0.8rem;
-    color: #666;
+    font-size: 0.85rem;
+    color: #555;
     margin-bottom: 0;
 }
 
 .event-part {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .timeline {
     list-style: none;
-    padding-left: 1.5rem;
-    border-left: 1px solid #444;
+    padding-left: 2rem;
+    border-left: 1px solid #333;
 }
 
 .timeline li {
     position: relative;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .timeline li::before {
     content: '';
     position: absolute;
-    left: -2.05rem;
-    top: 0.4rem;
-    width: 10px;
-    height: 10px;
-    background-color: #888;
+    left: -2.3rem;
+    top: 0.6rem;
+    width: 12px;
+    height: 12px;
+    background-color: #555;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.timeline li h3 {
+    margin-bottom: 0.5rem;
+}
+
 .timeline li p {
-    color: #aaa;
-    margin-top: 0.5rem;
+    color: #b0b0b0;
+    margin-top: 0.2rem;
+    font-size: 1rem;
 }
 
 .timeline li:hover::before {
     background-color: #fff;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 h2:hover {
     animation: tremble 0.5s infinite;
+    cursor: default;
 }
 
 @keyframes tremble {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-1px); }
-  50% { transform: translateX(1px); }
-  75% { transform: translateX(-1px); }
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-1px); }
+    50% { transform: translateX(1px); }
+    75% { transform: translateX(-1px); }
 }

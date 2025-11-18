@@ -2,7 +2,7 @@
     --cor-fundo: #1a1a1a;
     --cor-container: #222222;
     --cor-texto: #e7e7e7;
-    --cor-titulo: #c9b4b4; 
+    --cor-titulo: #d6cbcb; 
     --cor-destaque: #8888883a;
     --cor-escura:#242222;
     --cor-cinza-claro: #a0a0a0;
@@ -31,14 +31,15 @@ img {
     max-width: 99%;
     height: auto;
     width: auto;
-    display: block;
     border-radius: 10px;
     margin: auto;
 }
 
 .Foto-Casos img {
-    display: inline;
+    display: flex;
     flex-direction: column;
+    width: auto;
+    height: auto;
 }
 
 h1, h2, h3 {
@@ -56,14 +57,14 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
-    color: var(--cor-texto);
+    font-size: 1.75rem;
+    color: var(--cor-titulo);
     margin-bottom: 15px;
 }
 
 p {
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 a {
@@ -215,4 +216,13 @@ section:last-of-type {
 .lightbox-close:hover {
     color: var(--cor-destaque);
     transform: scale(1.1);
+}
+
+button{
+    color: rgb(0, 0, 0);
+    background-image: url(img/arquivo-v.png);
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }

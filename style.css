@@ -67,6 +67,20 @@ p {
     font-size: 1.15rem;
 }
 
+button{
+    width: 140px;
+    height: 100px;
+    background-image: url('img/arquivo-v.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+}
+
 a {
     color: var(--cor-titulo);
     text-decoration: none;
@@ -106,6 +120,7 @@ section {
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #444;
+    display: block;
 }
 section:last-of-type {
     border-bottom: none;
@@ -218,11 +233,3 @@ section:last-of-type {
     transform: scale(1.1);
 }
 
-button{
-    color: rgb(0, 0, 0);
-    background-image: url(img/arquivo-v.png);
-    width: 70px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
